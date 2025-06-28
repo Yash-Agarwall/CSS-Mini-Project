@@ -15,3 +15,8 @@ It's inspired by the clean sidebar navigation you often see in real-world apps â
 - Mastered `position: fixed`, `vh`, and sibling combinators like `~`
 - Built confidence using Google Fonts, Font Awesome, and visual hierarchy
 - Understood transitions and hover animations that make UIs engaging
+
+ ğŸŒ Live Demo
+
+[Click here to view it live!](https://css-mini-project-rose.vercel.app)
+
