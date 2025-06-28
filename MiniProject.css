@@ -1,0 +1,129 @@
+*{
+    /* to remove all the default margin and padding */
+    margin:0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.main_box{
+    background: url(netflix.jpeg);
+    height: 100vh;/* to make div cover complete height of viewport (50vh- 50% height)*/
+    background-size: cover; /*so that complete image covers the bg(instead of its fraction)*/
+}
+.button_one i{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    /* take note of these things */
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu{
+    /* remember this, to make it look like its animated, we set left 10 -300px, its always on the page
+    but not visible */
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba( 255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu .logo{ /* using different combination of selectors*/
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    height: 60px; /*since the logo div consists of an anchor tag only(no content) so its height is
+    0px, so we gotta set its height explicitly to make the box shadow work*/
+
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+.sidebar_menu .menu{
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+}
+.button_two{
+    color: grey;
+    font-size: 25px;
+    position: absolute;
+    left: 275px;
+    line-height: 60px;
+    transition: all 0.3s linear;
+    /* opacity: 0; */
+}
+
+.sidebar_menu .menu li{
+    padding: 14px 18px;
+    margin-top: 0px;
+    
+}
+.sidebar_menu .menu i,a{
+    color: white;
+}
+.sidebar_menu .menu a{
+    text-decoration: none;
+    padding-left: 8px; 
+}
+.sidebar_menu .social_media{
+    
+    position: absolute;
+    left: 25%;
+    bottom: 20px;
+}
+.sidebar_menu .social_media i{
+    opacity: 0.5;
+    padding: 0 5px;
+
+}
+#check{
+    /* to remove the checkbox */
+    display: none;    
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.button_one:hover i{
+    font-size: 33px;
+    cursor: pointer;
+    /* transition: 0.5s;  - instead of setting transition on hovering, set it in button_one icon itself */
+}
+.button_two:hover{
+    font-size: 28px;
+    color: rgba(255, 0, 0, 0.6);
+    cursor: pointer;
+    /* transition: 0.5s; */
+
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    /* font-size: 120%;- dont use font size to increase size on hovering,
+     coz that will shift other icons as well */ 
+    transform: scale(1.3);
+}
+
+/* this is most important, when we check the checkbox(i.e. we click the hamburger icon,
+ which is the label of checkbox) then the sidebar menu's left should become 0 instead of -300.
+ And cross(button_two) is also a label for the same checkbox, when we click it, the checkbox is 
+ unchecked, so sidebar_menu's left becomes -300px.
+ ~ -> sibling combinator*/
+#check:checked ~ .sidebar_menu{
+    left:0;
+}
+#check:checked ~ .button_one i{
+    opacity: 0;
+}
