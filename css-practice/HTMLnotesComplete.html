@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- element(content+tags),h1 to h6,boilerplate,list(ul,ol),anchor(a-for links),
+     image,b,i,u , video-->
+    <!-- block/inline, div(block), span(inline),sub,sup,semantic/non,  -->
+    <!-- entities- &nbsp; &lt;     , emmets- p>div, p>div+img, *  -->
+
+    <!-- table(thead/tbody, tr-table row/td-tableData/th- table header) -->
+
+    <!-- form
+     1) input(type=text/number/time/color/range- min, max, step/checkbox- checked keyword,
+      in url- "on" is passed is checked id clicked else nothing passed/radio/
+      email , placeholder, name- displayed as name:value pair in url, )
+     2) Label
+     3) Button(type= submit/button-does nothing/reset)
+     4) button using input(type=submut, value=click me 2)
+     5) enable google search(by setting name=q and pasting address in action) 
+     6)select- option   -->
+     <!-- textarea-rows, cols(2,10 by default)-->
+
+    <h3>form</h3>
+    <form action="https://www.google.com/search">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="enter your name" id="name" name="q">
+        <button>Google search</button>
+        <input type="submit" value="click me 2"><!-- button using input -->
+
+        <input type="checkbox" id="age" name="age" checked>
+        <label for="age" >I am 18+</label>
+
+        <input type="radio" name="choice" id="c1" ><!-- same name links them,
+         so that both are not selected aat the same time-->
+        <label for="c1"> choice 1</label>
+        <input type="radio" name="choice" id="c2" value="c2">
+        <label for="c2"> choice 2</label>
+        <input type="color">
+
+        <select name="profession" id="prf">
+            <option value="stu">student</option>
+            <option value="eng">engineer</option>
+            <option value="dev">developer</option>
+        </select>
+    </form><br><br>
+    <a href="https://www.apnacollege.in">apna college</a>
+    <img src="C:\Users\Yash Agarwal\Desktop\yash photo.jpg" height="25px" alt="yash photo">
+    <br>
+    <label for="fb">enter feedbcak</label>
+     <textarea name="feedback" id="fb"></textarea>
+    <ol>
+        <!-- this is a comment -->
+        <li><b>deepak</b></li>
+        <li><i>yash</i></li>
+        <li><u>jbwe</u></li>
+        <li>rever</li>
+        <li>erre</li>
+    </ol>
+
+    <table border="black">
+        <caption>student information</caption>
+        <tr>
+            <th rowspan="7">info</th>
+            <th rowspan="2">name</th>
+            <th colspan="2">address</th>
+        </tr>
+        <tr>
+            <th>city</th>
+            <th>house</th>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>delhi</td>
+            <td>1</td>
+        </tr>
+        <tr><td>a</td>
+            <td>delhi</td>
+            <td>1</td></tr>
+        <tr>
+            <td>a</td>
+            <td>delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>delhi</td>
+            <td>1</td>
+        </tr>
+    </table><br><br>
+</body>
+</html>

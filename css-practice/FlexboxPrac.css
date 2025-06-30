@@ -1,0 +1,43 @@
+#container{
+    border: 3px solid darkgreen;
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 400px;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    border-radius: 5px;
+    /* align-items: center; */
+}
+.flexItem{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    /* padding: 10px; */
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: grey;
+    font-size: 50px;
+}
+#q2{
+    height: 50px;
+    width: 900px;
+    border: 2px solid black;
+    display: flex;
+    background-color: pink;
+    /* align-content: space-evenly; */
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-content: center;
+}
+.child{
+    height: 50px;
+    width: 80px;
+    /* padding-top: 10px; */
+    /* line height technique is good, just set line height to be of same size
+     as that of div's height then the text would be aligned at center vertically(no need to care about top margin or padding) */
+    line-height: 50px;
+    font-size: 24px;
+    margin-left: 5px;
+}
